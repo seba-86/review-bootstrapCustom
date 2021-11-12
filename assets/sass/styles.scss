@@ -1,10 +1,54 @@
 // variables de node module/boostrap/variables; se pueden sobrescribir 
-// watch sass detecta el archivo y crea el css/styles con los cambios
+// Live sass compiler detecta el archivo y crea el css/styles con los cambios
 // Generated :
 // /Users/sebastianandres/Desktop/bootstrap-review/assets/sass/styles.css
 // /Users/sebastianandres/Desktop/bootstrap-review/assets/sass/styles.css.map
+
+// resumen: 
+// 1.Con el gestor de dependencia se instala los archivos de bootstrap 
+// 2.Se crea un archivo scss invocando el archivo de bootstrap (@import "../node_modules/bootstrap/scss/bootstrap";) 
+//de node_modules donde esta instalado bootstrap
+// 3.El navegador entiende css por lo que live sass compiler encuentra los archivos y los compila y crea un archivo css
+// con el mismo nombre (style.scss to style.css)
+
+
+// MOdificando las variables por default de bootstrap, en este caso se sobreescribe la tipografia de google font
 $font-family-sans-serif:'Barlow Semi Condensed', sans-serif;
 
+// Modificando background de las variables por default de bootstrap
+
+$primary:#733fc8;
+$success: #49556b;
+$dark: #18202d;
+$secondary: #edf2f8;
+
+ /* Media queries = configuramos los vh en que tamaño sea ejecutable, personalizando la clase (vh-100 x alto-100)*/
+ @media (min-width: 992px) {
+    .alto-100 {
+        height: 100vh;
+    }
+}
+
+.d-flex img {
+    width: 50px;
+}
+
+.fondo-card {
+    background-image: url('../img/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 85% top;
+    
+}
+
+// modificar el container de bootstrap
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 950px, // 950
+  xl: 1140px,
+  xxl: 1320px
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
