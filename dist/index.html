@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Venegas">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Review Bootstrap 5</title>
+
+
+    <!--Font Awe-->
+    <script src="https://kit.fontawesome.com/6a3cb15231.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;600;700;900&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <!-- change styles.css to reduced.css, al final del proyecto -->
+    <link rel="stylesheet" href="./assets/css/reduced.css">
+
+
+</head>
+
+<!-- notes:
+flexbox, d-flex para alinear verticalmente necesita detectar el alto de donde se esta viendo el contenido 
+para eso se ocupan los espaciados o tamaños (SIZING de bootstrap), como el container no tiene el 100% del total, esta 
+las clases VIEWPORT (vw = x , vh = y)  vh-100 = 100% del ancho vertical de la vista -->
+
+<body>
+
+    <main class="container d-flex justify-content-center align-items-center alto-100">
+
+        <div class="row">
+            <!-- column left -->
+            <div class="col-12 col-lg-9 ">
+                <div class="row">
+                    <div class="col-12 col-lg-8 p-2 ">
+                        <article class="card h-100 bg-primary text-white fondo-card shadow-sm ">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./assets/img/image-daniel.jpg" alt="img-daniel"
+                                        class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Daniel Clifford</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eius
+                                        quasi?
+                                        Voluptatum
+                                        at optio, atque voluptates assumenda vitae non veniam nulla odit. Numquam,
+                                        illum.
+                                        Labore dolor suscipit architecto quidem laudantium.
+                                    </p>
+                                    <p class="fs-6 lh-1">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur non
+                                        animi fuga. Culpa rem, eligendi soluta neque illo earum, voluptatum illum
+                                        quisquam, aperiam dolorum unde debitis temporibus iure aliquid.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-4 p-2">
+                        <article class="card h-100 bg-success text-white shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./assets/img/image-jeanette.jpg" alt="img-jeanette"
+                                        class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Jeanette Clifford</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-6 lh-1">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur non
+                                        animi fuga. Culpa rem, eligendi soluta neque illo earum, voluptatum illum
+                                        quisquam, aperiam dolorum unde debitis temporibus iure aliquid.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- se crea una nueva fila fuera de las 12 columnas de la 1º fila  -->
+                    <!-- podria ser tambien un new row con col-lg-4 y col-lg-8 = row [col-lg-4, col-lg-8]-->
+                    <div class="col-12 col-lg-4 p-2">
+                        <article class="card h-100 bg-secondary shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./assets/img/image-jonathan.jpg" alt="img-jonathan"
+                                        class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Jonathan Clifford</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <p class="fs-6 lh-1">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur non
+                                        animi fuga. Culpa rem, eligendi soluta neque illo earum, voluptatum illum
+                                        quisquam, aperiam dolorum unde debitis temporibus iure aliquid.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-8 p-2">
+                        <article class="card h-100 bg-dark text-white shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./assets/img/image-kira.jpg" alt="img-kira"
+                                        class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Kira Clifford</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eius
+                                        quasi?
+                                        Voluptatum
+                                        at optio, atque voluptates assumenda vitae non veniam nulla odit. Numquam,
+                                        illum.
+                                        Labore dolor suscipit architecto quidem laudantium.
+                                    </p>
+                                    <p class="fs-6 lh-1">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur non
+                                        animi fuga. Culpa rem, eligendi soluta neque illo earum, voluptatum illum
+                                        quisquam, aperiam dolorum unde debitis temporibus iure aliquid.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- column right -->
+
+            <div class="col-12 col-lg-3 p-2">
+                <article class="card h-100 bg-secondary shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <img src="./assets/img/image-patrick.jpg" alt="img-patrick"
+                                class="border border-secondary border-3 rounded-circle">
+                            <div class="ps-3">
+                                <h6 class="m-0 h6">Patrick Clifford</h6>
+                                <p class="m-0 h6">Lorem, ipsum.</p>
+
+                            </div>
+                        </div>
+                        <div>
+                            <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, eius quasi?
+                                Voluptatum
+                                at optio, atque voluptates assumenda vitae non veniam nulla odit. Numquam,
+                                illum.
+                                Labore dolor suscipit architecto quidem laudantium.
+                            </p>
+                            <p class="fs-6 lh-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt pariatur non
+                                animi fuga. Culpa rem, eligendi soluta neque illo earum, voluptatum illum
+                                quisquam, aperiam dolorum unde debitis temporibus iure aliquid.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- grid -->
+    <div class="container text-center">
+        <div class="row">
+            <!-- 1 fila (row) con 12 columnas (grid 12)-->
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">1</div>
+        </div>
+        <div class="row">
+            <!-- 1 fila (row) con 3 columnas (12/3 = 4) => col-4  -->
+            <div class="col-4 border">4</div>
+            <div class="col-4 border">4</div>
+            <div class="col-4 border">4</div>
+        </div>
+        <div class="row " style="background-color: aqua;">
+            <!-- 1 fila (row) con 4 columnas (12/4 = 3) => col-3 -->
+            <div class="col-3 border">3</div>
+            <div class="col-3 border">3</div>
+            <div class="col-3 border">3</div>
+            <div class="col-3 border">3</div>
+        </div>
+        <div class="row" style="background-color:lawngreen">
+            <div class="col-12 col-sm-6 border col-md-4 col-lg-3 ">3</div>
+            <div class="col-12 col-sm-6 border col-md-4 col-lg-3">3</div>
+            <div class="col-12 col-sm-6 border col-md-4 col-lg-3">3</div>
+            <div class="col-12 col-sm-6 border col-lg-3">3</div>
+            <!-- < 12 salto de linea automatico fuera de las 12 col = 1 new row -->
+            <div class="col-12 col-md-6 border col-lg-12">3</div>
+        </div>
+    </div>
+
+    <!--My script-->
+    <script src=""></script>
+
+</body>
+
+<html>
