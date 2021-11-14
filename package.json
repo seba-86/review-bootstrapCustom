@@ -1,10 +1,13 @@
+
+
 {
   "name": "bootstrap-review",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "purgecss --css assets/sass/styles.css --content index.html --output assets/sass/reduced.css"
+    
   },
   "keywords": [],
   "author": "",
